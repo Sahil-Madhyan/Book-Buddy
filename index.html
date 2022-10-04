@@ -23,6 +23,7 @@
     .navigation {
       display: flex;
       justify-content: space-between;
+      width: auto;
     }
 
     .list1 {
@@ -81,7 +82,7 @@
 
     .search {
       display: flex;
-      height: 60px;
+      height: fit-content;
       background-color: #F9F4DB;
       align-items: center;
       justify-content: space-between;
@@ -101,7 +102,9 @@
       margin-right: 30px;
       border: 2px solid #E7D6AC;
     }
-
+    #btnsrch:hover{
+      background-color: #F9F4DB;
+    }
     #btnadv {
       padding: 10px 20px;
       margin-right: 50px;
@@ -111,6 +114,9 @@
       border-radius: 15px;
       border: 2px solid #E7D6AC;
     }
+    #btnadv:hover{
+      background-color: #E7D6AC;
+    }
 
     #btns-div {
       display: flex;
@@ -118,9 +124,10 @@
     }
 
     #txtar {
-      padding: 5px;
-      width: 1000px;
-      height: 5vh;
+      padding: 10px;
+      padding-right: 50px;
+      width: 50vw;
+      height: fit-content;
       border: 2px solid #F9F4DB;
       border-radius: 10px;
       font-size: medium;
@@ -148,7 +155,7 @@
     #mainbody {
       display: flex;
       background-color: #F9F4DB;
-      height: 30vh;
+      height: fit-content;
       border-radius: 15px;
       margin: 10px 10px;
     }
@@ -156,16 +163,19 @@
     #bookspace {
       background-color: #E7D6AC;
       margin: 15px 20px;
-      width: 70vw;
+      width: fit-content;
+      height: fit-content;
       border-radius: 15px;
       display: flex;
-      /* height: 160px; */
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
     }
 
     #signupbar {
       background-color: #E7D6AC;
       margin: 15px 20px;
-      width: 30vw;
+      width: fit-content;
       border-radius: 15px;
       /* display: flex; */
 
@@ -173,7 +183,7 @@
 
     #bestsellers {
       background-color: #F9F4DB;
-      height: 400px;
+      height: fit-content;
       border-radius: 15px;
       margin: 10px 10px;
       padding: 20px;
@@ -182,11 +192,11 @@
 
     #books {
       background-color: #E7D6AC;
-      height: 300px;
-      width: 1100px;
-      margin: auto;
+      height: fit-content;
+      width: auto;
+      margin: inherit;
       border-radius: 15px;
-      padding: 20px;
+      padding: 10px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -205,12 +215,10 @@
       border-radius: 5px;
     }
 
-    #bookspcimg {
+    /* #bookspcimg {
       width: 120px;
       height: 100px;
-      margin-left: 10px;
-      margin-bottom: 10px;
-    }
+    } */
 
     #signupbtn {
       width: 110px;
@@ -292,16 +300,10 @@
 
     .bookSpace1 {
       display: flex;
-      flex-direction: row;
-      padding: 10px 10px;
       justify-content: center;
+      flex-direction: column;
+      padding: 10px;
       align-items: center;
-    }
-
-    .bookSpace-text {
-      position: absolute;
-      transform: translate(-80%, 200%);
-
     }
 
     .Signup-news {
@@ -320,9 +322,6 @@
       margin: 10px 10px;
       padding: 20px;
       border-radius: 10px;
-    }
-    main{
-      height: fit-content
     }
   </style>
   <header>
@@ -373,14 +372,12 @@
       <div id="bookspace">
         <div class="bookSpace1">
           <img src="bookspace.png" alt="" id="bookspcimg"><br>
-          <div class="bookSpace-text">
-            <h2 class="heading">#BookSpace</h2>
-          </div>
-          <p style="font-size:xx-large; text-align: center;color: #550D0E;">#COMING SOON</p>
-          <img src="image 8.png" alt="#" style="position: absolute; transform: translateX(500%);">
-          <img src="image 9.png" alt="#" style="position: absolute; transform: translate(300%,100%);">
-          <img src="image 12.png" alt="#" style="position: absolute; transform: translate(400%,-100%);">
+          <h2 class="heading">#BookSpace</h2>
         </div>
+         <p style="font-size:xx-large; text-align: center;color: #550D0E;">#COMING SOON</p>
+          <img src="image 8.png" alt="#" id="bookspcimg">
+          <img src="image 9.png" alt="#" id="bookspcimg">
+          <img src="image 12.png" alt="#" id="bookspcimg">
       </div>
       <div id="signupbar">
         <h3 class="heading"><img src="./image 10.png" alt="news"
