@@ -86,6 +86,10 @@
       background-color: #F9F4DB;
       align-items: center;
       justify-content: space-between;
+      width: fit-content;
+      min-width: 97vw;
+      border-radius: 10px;
+      margin: 0px 10px;
     }
 
     .text-div {
@@ -202,8 +206,8 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      overflow: scroll;
     }
-
     #signupbar h3 {
       display: block;
     }
@@ -323,6 +327,7 @@
       margin: 10px 10px;
       padding: 20px;
       border-radius: 10px;
+      width: auto;
     }
   </style>
   <header>
@@ -404,6 +409,54 @@
             <span>L.E Bowman</span>
           </div>
           <img class="book_Imgs" src="./image 13.png" alt="book1">
+          <button class="downloadBook" type="submit" onclick="download(this.id)" id = "1">Download</button>
+        </div>
+        <div class="book-center ">
+          <div class="text">
+            <span><strong>Thief River Falls</strong></span><br>
+            <span>Brian Freeman</span>
+          </div>
+          <img class="book_Imgs" src="./image 16.png" alt="book2">
+          <button class="downloadBook" type="submit" onclick="download(this.id)" id="2">Download</button>
+        </div>
+        <div class="book-center ">
+          <div class="text">
+            <span><strong>If it Bleeds</strong></span><br>
+            <span>Stephen King</span>
+          </div>
+          <img class="book_Imgs" src="./image 17.png" alt="book3">
+          <button class="downloadBook" type="submit">Download</button>
+        </div>
+        <div class="book-center ">
+          <div class="text">
+            <span><strong>I Learned From Trees</strong></span><br>
+            <span>L.E Bowman</span>
+          </div>
+          <img class="book_Imgs" src="./image 13.png" alt="book1">
+          <button class="downloadBook" type="submit">Download</button>
+        </div>
+        <div class="book-center ">
+          <div class="text">
+            <span><strong>Thief River Falls</strong></span><br>
+            <span>Brian Freeman</span>
+          </div>
+          <img class="book_Imgs" src="./image 16.png" alt="book2">
+          <button class="downloadBook" type="submit">Download</button>
+        </div>
+        <div class="book-center ">
+          <div class="text">
+            <span><strong>If it Bleeds</strong></span><br>
+            <span>Stephen King</span>
+          </div>
+          <img class="book_Imgs" src="./image 17.png" alt="book3">
+          <button class="downloadBook" type="submit">Download</button>
+        </div>
+        <div class="book-center ">
+          <div class="text">
+            <span><strong>I Learned From Trees</strong></span><br>
+            <span>L.E Bowman</span>
+          </div>
+          <img class="book_Imgs" src="./image 13.png" alt="book1">
           <button class="downloadBook" type="submit">Download</button>
         </div>
         <div class="book-center ">
@@ -431,5 +484,16 @@
     <p>&copy; BookBuddy.co</p>
   </footer>
 </body>
+<script>
+  function download(id){
+    if(id == "2"){
+      console.log("1 clicked")
+      window.open("https://b-ok.asia/dl/5341304/cfc088")
+    }
+    else{
+      console.log("No")
+    }
+  }
+</script>
 
 </html>
