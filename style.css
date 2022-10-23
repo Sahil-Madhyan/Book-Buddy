@@ -74,7 +74,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: fit-content;
-  min-width: 97vw;
+  min-width: 98vw;
   border-radius: 10px;
   margin: 0px 10px;
 }
@@ -322,4 +322,51 @@ footer {
   padding: 20px;
   border-radius: 10px;
   width: auto;
+}
+.centerLogin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginForm{
+  background-color: rgba(249, 244, 219,0.7);
+  margin: 20px 20px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+}
+.loginForm h1{
+  margin: 20px 10px;
+}
+.loginForm label{
+  font-size: larger;
+}
+.loginForm input{
+  padding: 10px 10px;
+  border-radius: 7px;
+  outline: 0px;
+  border: solid 1px black;
+  width: 25vw;
+}
+.btnCenter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btnCenter button{
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: solid 1px black;
+  background-color: #550d0e;
+  color: #ffffff;
+  cursor: pointer;
+}
+.btnCenter button:hover{
+  background-color: #f9f4db;
+  color: #550d0e;
 }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login To Book Buddy</title>
+    <link rel="shortcut icon" href="./book_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(./book-library-with-open-textbook.jpg);background-repeat: no-repeat; background-size: cover;">
+    <header>
+        <nav class="navigation">
+      <div class="nav1">
+        <ul class="list1">
+          <li>
+            <a href="./index.html"><img src="./home.png" alt="Home_icon" /></a>
+          </li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Help</a></li>
+        </ul>
+      </div>
+      <div class="nav2">
+        <ul class="list2">
+          <li><a>Wishlist</a></li>
+          <li><a>My books</a></li>
+          <li><a href="./login.html">Log in/Sign up</a></li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+    <main>
+        <div class="centerLogin">
+            <div class="loginForm">
+        <h1>LOGIN FORM</h1>
+        <form action="#" method="post">
+          <label>Username</label><br /><br />
+          <input
+            type="text"
+            name="user"
+            id="user"
+            placeholder="Enter your username"
+          /><br /><br />
+          <label>Password</label><br /><br />
+          <input
+            type="password"
+            name="psswd"
+            id="psswd"
+            placeholder="Enter your password"
+          /><br /><br />
+          <div class="btnCenter">
+            <button type="reset" onclick="login()">LOGIN</button>
+          </div>
+        </form>
+        </div>
+        
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
