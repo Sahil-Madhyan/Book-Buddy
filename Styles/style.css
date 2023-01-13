@@ -146,10 +146,10 @@ header {
 #mainbody {
   display: flex;
   background-color: #f9f4db;
-  height: fit-content;
-  width: fit-content;
+  width: 99%;
   border-radius: 15px;
   margin: 10px 10px;
+  justify-content: space-between;
 }
 
 #bookspace {
@@ -169,7 +169,10 @@ header {
   margin: 15px 20px;
   width: fit-content;
   border-radius: 15px;
-  /* display: flex; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
 }
 
 #bestsellers {

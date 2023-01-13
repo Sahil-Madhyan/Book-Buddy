@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Book Buddy</title>
-  <link rel="shortcut icon" href="./book_favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./Assests/book_favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./Styles/style.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
       <div class="nav1">
         <ul class="list1">
           <li>
-            <a href="./index.html"><img src="./home.png" alt="Home_icon" /></a>
+            <a href="./index.html"><img src="./Assests/home.png" alt="Home_icon" /></a>
           </li>
           <li><a href="">Contact</a></li>
           <li><a href="">Help</a></li>
@@ -26,7 +26,7 @@
         <ul class="list2">
           <li><a>Wishlist</a></li>
           <li><a>My books</a></li>
-          <li><a href="./login.html">Log in/Sign up</a></li>
+          <li id="login"><a href="./login.html">Log in/Sign up</a></li>
         </ul>
       </div>
     </nav>
@@ -58,16 +58,16 @@
     <div id="mainbody">
       <div id="bookspace">
         <div class="bookSpace1">
-          <img src="bookspace.png" alt="" id="bookspcimg"><br>
+          <img src="./Assests/bookspace.png" alt="" id="bookspcimg"><br>
           <h2 class="heading">#BookSpace</h2>
         </div>
          <p style="font-size:xx-large; text-align: center;color: #550D0E;">#COMING SOON</p>
-          <img src="image 8.png" alt="#" id="bookspcimg">
-          <img src="image 9.png" alt="#" id="bookspcimg">
-          <img src="image 12.png" alt="#" id="bookspcimg">
+          <img src="./Assests/image 8.png" alt="#" id="bookspcimg">
+          <img src="./Assests/image 9.png" alt="#" id="bookspcimg">
+          <img src="./Assests/image 12.png" alt="#" id="bookspcimg">
       </div>
       <div id="signupbar">
-        <h3 class="heading"><img src="./image 10.png" alt="news"
+        <h3 class="heading"><img src="./Assests/image 10.png" alt="news"
             style="height: 20px; padding-right: 7px; margin-left:5px">Learn about our new offers by joining our
           newsletters</h3>
         <div class="Signup-news">
@@ -124,8 +124,6 @@
           <img class="book_Imgs" src="https://covers.zlibcdn2.com/covers299/books/4b/25/80/4b2580b6867fe22237237b74ba9e3918.jpg" alt="book1">
           <button class="downloadBook" type="submit" onclick="download_Book(this.id)" id="5">Download</button>
         </div>
-        
-
       </div>
     </div>
   </main>
@@ -134,6 +132,7 @@
     <p>&copy; BookBuddy.co</p>
   </footer>
 </body>
-<script src="./script.js"></script>
+<script src="./Scripts/script.js"></script>
+<script src="./Scripts/login.js"></script>
 
 </html>
