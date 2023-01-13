@@ -1,3 +1,9 @@
+var log = document.getElementById("loginForm");
+log.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    login();
+  }
+});
 function login() {
   var userName = document.getElementById("user").value;
   var psswd = document.getElementById("psswd").value;
