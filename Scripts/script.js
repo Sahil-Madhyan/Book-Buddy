@@ -1,23 +1,23 @@
 function download_Book(id) {
   if (id == "1") {
     window.open(
-      "https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834/ref=sr_1_1?crid=3NV856NGE03O2&keywords=Atomic+Habits&qid=1673624539&sprefix=atomic+habits%2Caps%2C250&sr=8-1"
+      "https://libgen.rocks/get.php?md5=96f997237d1fffe83467f130c350f275&key=VKS87H7672UIG214"
     );
   } else if (id == "2") {
     window.open(
-      "https://www.amazon.in/Ego-Enemy-Ryan-Holiday/dp/1781257019/ref=sr_1_1?crid=3RN4CJJBYNV8X&keywords=ego+is+the+enemy&qid=1673624594&sprefix=Ego%2Caps%2C218&sr=8-1"
+      "https://libgen.rocks/get.php?md5=0cc0cf7948ead84332112cc0160efb3d&key=TV4VBE8U9D3U7LWS"
     );
   } else if (id == "3") {
     window.open(
-      "https://www.amazon.in/Ikigai-H%C3%A9ctor-Garc%C3%ADa/dp/178633089X/ref=sr_1_3?crid=2LNX4X3EODYLQ&keywords=Ikigai&qid=1673624404&sprefix=ikiga%2Caps%2C409&sr=8-3"
+      "https://libgen.rocks/get.php?md5=f31b5aa50e3b8a101c257085d0ed3ce2&key=R1KH6XNDQUHQBYR3"
     );
   } else if (id == "4") {
     window.open(
-      "https://www.amazon.in/Rich-Dad-Poor-Middle-Anniversary/dp/1612681131/ref=sr_1_3?keywords=rich+dad+poor+dad+book&qid=1673624675&sprefix=Rich%2Caps%2C214&sr=8-3"
+      "https://libgen.rocks/get.php?md5=7095db7134010f55d4987996a727be7d&key=P9P4U3EOEFY5BB1T"
     );
   } else if (id == 5) {
     window.open(
-      "https://www.amazon.in/Mindset-Techniques-Negativity-Positive-Takeover-ebook/dp/B077F2NN1J/ref=sr_1_1?crid=1BE8I4AJLV8BA&keywords=Mindse&qid=1673624760&sprefix=mindse%2Caps%2C221&sr=8-1"
+      "https://libgen.rocks/get.php?md5=9087c0c017eeaaf43b3d44199d4738c6&key=64W89MGKIQ3LBZNY"
     );
   }
 }
@@ -39,10 +39,19 @@ function signUp() {
     document.getElementById("signemail").value = "";
   }
 }
-
+var srch = document.getElementById("txtar");
+srch.addEventListener("keypress", e => {
+  if (e.key === "Enter") {
+    search();
+  }
+});
 function search() {
   var query = document.getElementById("txtar").value;
-  var url = "https://www.amazon.in/s?k=" + query;
-  document.getElementById('txtar').value = "";
-  window.open(url);
+  if (query == "") {
+    alert("Search is empty");
+  } else {
+    var url = "https://libgen.is/search.php?req=" + query;
+    document.getElementById('txtar').value = "";
+    window.open(url);
+  }
 }
