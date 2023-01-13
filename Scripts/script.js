@@ -15,25 +15,34 @@ function download_Book(id) {
     window.open(
       "https://www.amazon.in/Rich-Dad-Poor-Middle-Anniversary/dp/1612681131/ref=sr_1_3?keywords=rich+dad+poor+dad+book&qid=1673624675&sprefix=Rich%2Caps%2C214&sr=8-3"
     );
-  } else if(id == 5){
+  } else if (id == 5) {
     window.open(
       "https://www.amazon.in/Mindset-Techniques-Negativity-Positive-Takeover-ebook/dp/B077F2NN1J/ref=sr_1_1?crid=1BE8I4AJLV8BA&keywords=Mindse&qid=1673624760&sprefix=mindse%2Caps%2C221&sr=8-1"
     );
   }
 }
 function signUp() {
-    var email = document.getElementById("signemail").value;
-    var atPos = email.indexOf("@");
-    var gmail = email.indexOf("gmail");
-    var dotPos = gmail + 5;
-    var com = email.indexOf("com");
-  if (email.charAt(atPos) == "@" && email.charAt(dotPos) == "." && email.charAt(com)) {
+  var email = document.getElementById("signemail").value;
+  var atPos = email.indexOf("@");
+  var gmail = email.indexOf("gmail");
+  var dotPos = gmail + 5;
+  var com = email.indexOf("com");
+  if (
+    email.charAt(atPos) == "@" &&
+    email.charAt(dotPos) == "." &&
+    email.charAt(com)
+  ) {
     alert("Daily Newsletter will be send to " + email);
-    document.getElementById("signemail").value = '';
-  }
-  else {
+    document.getElementById("signemail").value = "";
+  } else {
     alert("Enter valid email");
-    document.getElementById("signemail").value = '';
+    document.getElementById("signemail").value = "";
   }
-  
+}
+
+function search() {
+  var query = document.getElementById("txtar").value;
+  var url = "https://www.amazon.in/s?k=" + query;
+  document.getElementById('txtar').value = "";
+  window.open(url);
 }
