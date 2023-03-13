@@ -8,4 +8,4 @@ Book Buddy is an amazing little tool built using HTML,CSS,JS that helps readers 
 - [@Sahil Madhyan](https://github.com/Sahil-Madhyan)
 - [@Siddhant Kodolkar](https://github.com/SiddhantKodolkar)
 - [@Harsh Karira](https://github.com/Harshkarira)
-
+- [@Shalini Mirani](https://github.com/Shalini-Mirani)
