@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+  background-color: #ffffff;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+
+.list1 {
+  display: flex;
+  padding: 10px 0px;
+}
+
+.list2 {
+  display: flex;
+  padding: 10px 0px;
+}
+
+.list1 li {
+  list-style: none;
+}
+
+.list2 li {
+  list-style: none;
+}
+
+.list1 li a {
+  text-align: center;
+  text-decoration: none;
+  color: #550d0e;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
+.list1 li a:hover {
+  color: red;
+  font-size: 22px;
+}
+
+.list2 li a {
+  text-align: center;
+  text-decoration: none;
+  color: #550d0e;
+  padding: 0px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.list2 li a:hover {
+  color: red;
+  font-size: 22px;
+}
+
+.list1 img {
+  width: 20px;
+  margin-top: 2px;
+}
+
+.list1 img:hover {
+  width: 25px;
+}
+body{
+    background-image: url('../Assests/book-library-with-open-textbook.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.centerLogin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginForm{
+  background-color: rgba(249, 244, 219,0.7);
+  margin: 20px 20px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+}
+.loginForm h1{
+  margin: 20px 10px;
+}
+.loginForm label{
+  font-size: larger;
+}
+.loginForm input{
+  padding: 10px 10px;
+  border-radius: 7px;
+  outline: 0px;
+  border: solid 1px black;
+  width: 25vw;
+}
+.btnCenter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btnCenter button{
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: solid 1px black;
+  background-color: #550d0e;
+  color: #ffffff;
+  cursor: pointer;
+}
+.btnCenter button:hover{
+  background-color: #f9f4db;
+  color: #550d0e;
+}
