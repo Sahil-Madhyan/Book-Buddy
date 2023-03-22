@@ -9,7 +9,7 @@ function login() {
   var psswd = document.getElementById("psswd").value;
   if (userName == "sahilmadhyan" && psswd == "sahil123") {
     alert("Welcome " + userName);
-    window.location.href = "https://sahil-madhyan.github.io/Book-Buddy/";
+    window.location.href = "/";
   } else {
     alert("Login Failed");
   }

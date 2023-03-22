@@ -2,8 +2,6 @@
   margin: 0px;
   padding: 0px;
 }
-<<<<<<< HEAD
-=======
 #preloader{
     background: #000 url(../Assests/pre.gif) no-repeat center center fixed;
     background-size:30%;
@@ -16,7 +14,6 @@
 iframe{
   display: none;
 }
->>>>>>> 1d3d7772a7ae9521dfdc98f148b4509ca3b9cb7b
 
 header {
   background-color: #ffffff;
