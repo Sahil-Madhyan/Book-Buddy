@@ -6,17 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Book Buddy</title>
-  <link rel="shortcut icon" href="./book_favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./Assests/book_favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./Styles/style.css">
 </head>
 
 <body>
+    <div id="preloader">
+
+  </div>
+
   <header>
     <nav class="navigation">
       <div class="nav1">
         <ul class="list1">
           <li>
-            <a href="./index.html"><img src="./home.png" alt="Home_icon" /></a>
+            <a href="./index.html"><img src="./Assests/home.png" alt="Home_icon" /></a>
           </li>
           <li><a href="">Contact</a></li>
           <li><a href="">Help</a></li>
@@ -34,10 +38,10 @@
   <section class="search">
     <div id="brdnme">BookBuddy</div>
     <div class="text-div">
-      <input type="text" id="txtar" placeholder="Search"></input>
+      <input type="text" id="txtar" placeholder="Search on LibGen"></input>
     </div>
     <div id="btns-div">
-      <button id="btnsrch">Search</button>
+      <button id="btnsrch" onclick="search()">Search</button>
       <button id="btnadv">Advanced Search</button>
     </div>
     </div>
@@ -58,16 +62,16 @@
     <div id="mainbody">
       <div id="bookspace">
         <div class="bookSpace1">
-          <img src="bookspace.png" alt="" id="bookspcimg"><br>
+          <img src="./Assests/bookspace.png" alt="" id="bookspcimg"><br>
           <h2 class="heading">#BookSpace</h2>
         </div>
          <p style="font-size:xx-large; text-align: center;color: #550D0E;">#COMING SOON</p>
-          <img src="image 8.png" alt="#" id="bookspcimg">
-          <img src="image 9.png" alt="#" id="bookspcimg">
-          <img src="image 12.png" alt="#" id="bookspcimg">
+          <img src="./Assests/image 8.png" alt="#" id="bookspcimg">
+          <img src="./Assests/image 9.png" alt="#" id="bookspcimg">
+          <img src="./Assests/image 12.png" alt="#" id="bookspcimg">
       </div>
       <div id="signupbar">
-        <h3 class="heading"><img src="./image 10.png" alt="news"
+        <h3 class="heading"><img src="./Assests/image 10.png" alt="news"
             style="height: 20px; padding-right: 7px; margin-left:5px">Learn about our new offers by joining our
           newsletters</h3>
         <div class="Signup-news">
@@ -89,7 +93,7 @@
             <span><strong>Atomic Habits </strong></span>
             <span>James Clear</span>
           </div>
-          <img class="book_Imgs" src="https://covers.zlibcdn2.com/covers299/books/96/f9/97/96f997237d1fffe83467f130c350f275.jpg" alt="book1">
+          <img class="book_Imgs" src="https://m.media-amazon.com/images/I/51-nXsSRfZL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" alt="book1">
           <button class="downloadBook" type="submit" onclick="download_Book(this.id)" id = "1">Download</button>
         </div>
         <div class="book-center ">
@@ -97,7 +101,7 @@
             <span><strong>Ego Is the Enemy</strong></span>
             <span>Ryan Holiday</span>
           </div>
-          <img class="book_Imgs" src="https://covers.zlibcdn2.com/covers299/books/0c/c0/cf/0cc0cf7948ead84332112cc0160efb3d.jpg" alt="book2">
+          <img class="book_Imgs" src="https://m.media-amazon.com/images/I/51os4QMx98L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" alt="book2">
           <button class="downloadBook" type="submit" onclick="download_Book(this.id)" id="2">Download</button>
         </div>
         <div class="book-center ">
@@ -113,7 +117,7 @@
             <span><strong>Rich Dad Poor Dad </strong></span>
             <span>Robert T. Kiyosaki</span>
           </div>
-          <img class="book_Imgs" src="https://covers.zlibcdn2.com/covers299/books/70/32/d8/7032d82ffdc013053cb5ba5e04c8bc74.jpg" alt="book1">
+          <img class="book_Imgs" src="https://m.media-amazon.com/images/I/51A88IvtjGL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" alt="book1">
           <button class="downloadBook" type="submit" onclick="download_Book(this.id)" id="4">Download</button>
         </div>
         <div class="book-center ">
@@ -121,19 +125,30 @@
             <span><strong>Mindset</strong></span>
             <span>Carol Dweck</span>
           </div>
-          <img class="book_Imgs" src="https://covers.zlibcdn2.com/covers299/books/4b/25/80/4b2580b6867fe22237237b74ba9e3918.jpg" alt="book1">
+          <img class="book_Imgs" src="https://m.media-amazon.com/images/I/51jBmofYTwL.jpg" alt="book1">
           <button class="downloadBook" type="submit" onclick="download_Book(this.id)" id="5">Download</button>
         </div>
-        
-
       </div>
     </div>
   </main>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
   <footer>
     <p>&copy; BookBuddy.co</p>
   </footer>
+  <script>
+    var loader=document.getElementById("preloader");
+    window.addEventListener("load",function(){
+      loader.style.display="none";
+    })
+  </script>
 </body>
-<script src="./script.js"></script>
+<script src="./Scripts/script.js"></script>
+<script src="./Scripts/login.js"></script>
 
 </html>
